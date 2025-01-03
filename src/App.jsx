@@ -11,6 +11,7 @@ import Login from './pages/Login';
 import SignUp from './pages/Register';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import ContentPlan from './pages/ContentPlan'; // Import ContentPlan
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { auth } from './services/firebase';
@@ -28,9 +29,9 @@ function App() {
 
     return () => unsubscribe(); // Clean up on unmount
   }, []);
+
   return (
     <Router basename={import.meta.env.BASE_URL}>
-      {/* <RedirectWithState /> */}
       <div className="App">
         <Navbar loggedin={user ? 'true' : 'false'} />
         <div className="auth-wrapper">
@@ -50,8 +51,11 @@ function App() {
                 path="/profile"
                 element={user ? <Profile /> : <Navigate to="/login" />}
               />
-              {/* <Route path="/courses/:courseName" element={<CourseDetail />} /> */}
-              {/* <Route path="/" element={<Dashboard courses={courses} />} /> */}
+              <Route
+                path="/plan-content/:class/:subject"
+                element={user ? <ContentPlan /> : <Navigate to="/login" />}
+              />
+              {/* Other routes */}
             </Routes>
             <ToastContainer />
           </div>

@@ -6,7 +6,7 @@ function Navbar({ loggedin }) {
 
   return (
     <nav
-      className='navbar navbar-expand-lg sticky-top bg-body-tertiary navbar-light'>
+      className='navbar navbar-expand-lg navbar navbar-dark bg-primary'>
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -72,7 +72,7 @@ function Navbar({ loggedin }) {
           {loggedin === 'true' ? (
             <div className="d-flex align-items-center">
               <Link
-                className="btn clk rounded-circle me-3"
+                className="btn btn-secondary clk rounded-circle me-3"
                 to="/profile"
                 title="Profile"
               >

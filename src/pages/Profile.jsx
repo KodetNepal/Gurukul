@@ -46,10 +46,10 @@ function Profile() {
             <p>Email: {userDetails.email}</p>
             <p>
               We're excited to have you here again. Let's continue your learning
-              journey
+              journey.
             </p>
           </div>
-          <button className="btn" onClick={handleLogout}>
+          <button className="btn btn-secondary" onClick={handleLogout}>
             <i className="fa-solid fa-right-from-bracket"></i> Logout
           </button>
         </>

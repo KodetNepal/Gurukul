@@ -2,14 +2,15 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 const firebaseConfig = {
-  apiKey: 'AIzaSyCYeWoa0iKtDr9VV2iSZ9tZQqyWuBHWXnU',
-  authDomain: 'opencourses-6a478.firebaseapp.com',
-  projectId: 'opencourses-6a478',
-  storageBucket: 'opencourses-6a478.appspot.com',
-  messagingSenderId: '139996396922',
-  appId: '1:139996396922:web:5e0aec9a81d6aa30182ac3',
-  measurementId: 'G-1T13ESR8EJ',
+  apiKey: "AIzaSyCEkWUvcmL5p1kSTdUHbFbtFpGf3ydNg1Y",
+  authDomain: "sikshyasetu.firebaseapp.com",
+  projectId: "sikshyasetu",
+  storageBucket: "sikshyasetu.firebasestorage.app",
+  messagingSenderId: "416898715959",
+  appId: "1:416898715959:web:2c7ab86db6775f4bd48ab2",
+  measurementId: "G-1RSV4VBFYM"
 };
+
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth();

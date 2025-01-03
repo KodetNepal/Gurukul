@@ -1,0 +1,27 @@
+{
+    "8_Nepali": {
+      "topics": [
+        {
+          "name": "Grammar",
+          "subTopics": ["Nouns", "Verbs", "Adjectives"]
+        },
+        {
+          "name": "Literature",
+          "subTopics": ["Poetry", "Short Stories", "Essays"]
+        }
+      ]
+    },
+    "8_Maths": {
+      "topics": [
+        {
+          "name": "Algebra",
+          "subTopics": ["Linear Equations", "Quadratic Equations", "Polynomials"]
+        },
+        {
+          "name": "Geometry",
+          "subTopics": ["Triangles", "Circles", "Coordinate Geometry"]
+        }
+      ]
+    }
+  }
+  
