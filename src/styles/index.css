@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+  font-size: 16px; /* Base font size for scalability */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.flex-cen {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-color: #f8f9fa;
+  --bs-body-bg: #212529;
+}
+
+[data-bs-theme="light"] {
+  --bs-body-color: #212529;
+  --bs-body-bg: #f8f9fa;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
